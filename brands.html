@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore CCTV and electronics brands available through Smart Surveillance Lahore.">
+  <title>Our Brands | Smart Surveillance</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .brands-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+      margin-top: 45px;
+    }
+
+    .brand-card {
+      background: #fff;
+      border: 1px solid #e5eaf0;
+      border-radius: 18px;
+      min-height: 260px;
+      padding: 30px 22px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+      box-shadow: 0 10px 35px rgba(0,0,0,.05);
+      transition: .3s ease;
+    }
+
+    .brand-card:hover {
+      transform: translateY(-9px);
+      box-shadow: 0 18px 40px rgba(0,0,0,.12);
+    }
+
+    .brand-word {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+
+    .brand-hikvision { color: #f47721; }
+    .brand-dahua { color: #ed1c24; }
+    .brand-unv { color: #0877bd; }
+    .brand-tvt { color: #222f75; }
+    .brand-trendy { color: #169b78; }
+    .brand-pollo { color: #272727; }
+
+    .brand-symbol {
+      width: 90px;
+      height: 90px;
+      border-radius: 22px;
+      display: grid;
+      place-items: center;
+      font-size: 36px;
+      font-weight: 900;
+      background: #f1f5f9;
+    }
+
+    .brand-card p {
+      color: #687386;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    .brand-note {
+      margin-top: 35px;
+      padding: 18px;
+      border-radius: 12px;
+      background: #f1f5f9;
+      color: #596579;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .brand-intro {
+      max-width: 750px;
+      margin: auto;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Moving Bar -->
+  <div class="top-bar">
+    <div class="top-bar-track">
+      <span>SMART SURVEILLANCE — TRUSTED TECHNOLOGY BRANDS</span>
+      <span>SMART SURVEILLANCE — TRUSTED TECHNOLOGY BRANDS</span>
+      <span>SMART SURVEILLANCE — TRUSTED TECHNOLOGY BRANDS</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+
+      <a href="index.html" class="logo">
+        <span class="logo-icon">SS</span>
+        <span>SMART <strong>SURVEILLANCE</strong></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="brands.html" class="active">Brands</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-tag">OUR BRAND COLLECTION</span>
+      <h1>Technology <span>Brands</span></h1>
+      <p>
+        Explore security and technology brands associated
+        with our product range.
+      </p>
+      <a href="contact.html" class="btn btn-primary">Ask About Brands</a>
+    </div>
+  </section>
+
+  <!-- Brand Collection -->
+  <section class="section">
+    <div class="container">
+
+      <div class="brand-intro">
+        <span class="section-tag">BRANDS WE FEATURE</span>
+        <h2>Explore Our <span>Brands</span></h2>
+        <p>
+          We feature a selection of CCTV and electronics brands.
+          Contact us to confirm specific models and availability.
+        </p>
+      </div>
+
+      <div class="brands-grid">
+
+        <article class="brand-card">
+          <div class="brand-symbol brand-hikvision">H</div>
+          <div class="brand-word brand-hikvision">HIKVISION</div>
+          <p>Video security and surveillance products.</p>
+          <button class="btn btn-outline" data-order="Hikvision Products">
+            Ask About Products
+          </button>
+        </article>
+
+        <article class="brand-card">
+          <div class="brand-symbol brand-dahua">D</div>
+          <div class="brand-word brand-dahua">DAHUA</div>
+          <p>Security cameras and surveillance technology.</p>
+          <button class="btn btn-outline" data-order="Dahua Products">
+            Ask About Products
+          </button>
+        </article>
+
+        <article class="brand-card">
+          <div class="brand-symbol brand-unv">U</div>
+          <div class="brand-word brand-unv">UNV</div>
+          <p>Uniview video surveillance solutions.</p>
+          <button class="btn btn-outline" data-order="UNV Products">
+            Ask About Products
+          </button>
+        </article>
+
+        <article class="brand-card">
+          <div class="brand-symbol brand-tvt">T</div>
+          <div class="brand-word brand-tvt">TVT</div>
+          <p>Security and video monitoring equipment.</p>
+          <button class="btn btn-outline" data-order="TVT Products">
+            Ask About Products
+          </button>
+        </article>
+
+        <article class="brand-card">
+          <div class="brand-symbol brand-trendy">T</div>
+          <div class="brand-word brand-trendy">TRENDY</div>
+          <p>Technology and electronics product range.</p>
+          <button class="btn btn-outline" data-order="Trendy Products">
+            Ask About Products
+          </button>
+        </article>
+
+        <article class="brand-card">
+          <div class="brand-symbol brand-pollo">P</div>
+          <div class="brand-word brand-pollo">POLLO</div>
+          <p>Products from our listed electronics range.</p>
+          <button class="btn btn-outline" data-order="Pollo Products">
+            Ask About Products
+          </button>
+        </article>
+
+      </div>
+
+      <div class="brand-note">
+        <strong>Brand information:</strong>
+        Brand names and colored text above are for identification
+        and presentation. These are not official logo files and do
+        not indicate an authorized dealership or partnership.
+        Official logos should be added using approved brand assets.
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-tag">FIND THE RIGHT PRODUCT</span>
+      <h2>Looking for a <span>Specific Brand?</span></h2>
+      <p>Message us to ask about models, availability and prices.</p>
+      <a
+        href="https://wa.me/923477112091?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20ask%20about%20your%20brands."
+        class="btn btn-primary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Contact on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+
+      <div>
+        <h3>SMART SURVEILLANCE</h3>
+        <p>Security and electronics solutions in Lahore.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>0347 7112091</p>
+        <p>0320 4131881</p>
+        <p>smartsurviceline01@gmail.com</p>
+        <p>60 Feet Road, Near Mian Amiruddin Park, Lahore, Pakistan</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Smart Surveillance. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/923477112091"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp Smart Surveillance"
+  >☎</a>
+
+  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="site-content.js"></script>
+</body>
+</html>

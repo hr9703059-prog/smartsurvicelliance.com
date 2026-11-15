@@ -1,0 +1,860 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us | Smart Surveillance</title>
+
+<meta name="description" content="Contact Smart Surveillance Lahore for CCTV installation, security systems, electronics and technology solutions.">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* =================================
+   CONTACT PAGE PROFESSIONAL DESIGN
+================================= */
+
+.contact-page {
+    background: #071225;
+    color: #ffffff;
+}
+
+.contact-page .contact-hero {
+    padding: 95px 20px 75px;
+    text-align: center;
+    background:
+    radial-gradient(ellipse at 50% 100%,rgba(0,173,255,.20),transparent 65%),
+    linear-gradient(135deg,#09152c,#101d38);
+}
+
+.contact-page .contact-hero .section-tag {
+    color: #32d5ff;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.contact-page .contact-hero h1 {
+    font-size: clamp(36px,6vw,65px);
+    margin: 20px 0;
+    font-weight: 900;
+}
+
+.contact-page .contact-hero h1 span,
+.contact-page .highlight {
+    color: #13c7ff;
+}
+
+.contact-page .contact-hero p {
+    color: #b8c8dc;
+    font-size: 17px;
+}
+
+/* CONTACT MAIN */
+
+.contact-page .contact-section {
+    padding: 85px 20px;
+    background: #071225;
+}
+
+.contact-page .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 35px;
+    align-items: stretch;
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* CONTACT INFORMATION */
+
+.contact-page .contact-info {
+    padding: 38px;
+    background: linear-gradient(145deg,#102341,#0b1930);
+    border: 1px solid rgba(0,194,255,.18);
+    border-radius: 18px;
+    box-shadow: 0 15px 45px rgba(0,0,0,.22);
+}
+
+.contact-page .contact-info .section-tag {
+    color: #13c7ff;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.contact-page .contact-info h2 {
+    font-size: 36px;
+    margin: 18px 0 30px;
+}
+
+.contact-page .info-item {
+    display: flex;
+    gap: 16px;
+    margin: 24px 0;
+    align-items: flex-start;
+}
+
+.contact-page .info-icon {
+    min-width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: rgba(0,194,255,.12);
+    color: #16caff;
+    font-size: 23px;
+}
+
+.contact-page .info-item h3 {
+    margin: 0 0 8px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.contact-page .info-item p,
+.contact-page .info-item a {
+    color: #b8c8dc;
+    text-decoration: none;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.contact-page .info-item a:hover {
+    color: #16caff;
+}
+
+.contact-page .map-button {
+    display: inline-flex;
+    margin-top: 18px;
+    padding: 14px 22px;
+    background: #0ab9f5;
+    color: #061326;
+    font-weight: 800;
+    text-decoration: none;
+    border-radius: 9px;
+    transition: .3s;
+}
+
+.contact-page .map-button:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* CONTACT FORM */
+
+.contact-page .contact-form-box {
+    padding: 38px;
+    background: linear-gradient(145deg,#102341,#0b1930);
+    border: 1px solid rgba(0,194,255,.2);
+    border-radius: 18px;
+    box-shadow: 0 15px 45px rgba(0,0,0,.22);
+}
+
+.contact-page .contact-form-box h2 {
+    font-size: 32px;
+    margin: 0 0 12px;
+}
+
+.contact-page .form-description {
+    color: #aabbd0;
+    margin-bottom: 28px;
+    line-height: 1.7;
+}
+
+.contact-page #contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.contact-page #contactForm label {
+    color: #e4efff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.contact-page #contactForm input,
+.contact-page #contactForm select,
+.contact-page #contactForm textarea {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 15px 16px;
+    background: #ffffff;
+    color: #13233b;
+    border: 2px solid transparent;
+    border-radius: 9px;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: .3s;
+}
+
+.contact-page #contactForm input,
+.contact-page #contactForm select {
+    min-height: 53px;
+}
+
+.contact-page #contactForm textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.contact-page #contactForm input:focus,
+.contact-page #contactForm select:focus,
+.contact-page #contactForm textarea:focus {
+    border-color: #08c6ff;
+    box-shadow: 0 0 0 3px rgba(0,194,255,.15);
+}
+
+.contact-page #contactForm input::placeholder,
+.contact-page #contactForm textarea::placeholder {
+    color: #7a8ca2;
+}
+
+.contact-page .send-whatsapp {
+    margin-top: 15px;
+    width: 100%;
+    min-height: 56px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg,#25d366,#128c48);
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.contact-page .send-whatsapp:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(37,211,102,.25);
+}
+
+.contact-page .form-note {
+    font-size: 12px;
+    text-align: center;
+    color: #9fb2c9;
+    margin-top: 12px;
+}
+
+/* WHATSAPP CTA */
+
+.contact-page .contact-cta {
+    padding: 75px 20px;
+    text-align: center;
+    background:
+    radial-gradient(circle at center,rgba(0,180,255,.19),transparent 70%),
+    #0c1c35;
+}
+
+.contact-page .contact-cta h2 {
+    font-size: clamp(28px,5vw,45px);
+    font-weight: 900;
+}
+
+.contact-page .contact-cta p {
+    color: #b8c8dc;
+    margin: 18px 0 28px;
+}
+
+.contact-page .cta-whatsapp {
+    display: inline-block;
+    padding: 16px 30px;
+    background: #25d366;
+    color: white;
+    border-radius: 10px;
+    font-weight: 900;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.contact-page .cta-whatsapp:hover {
+    background: #128c48;
+    transform: translateY(-3px);
+}
+
+/* FOOTER */
+
+.contact-page .footer {
+    background: #050e1c;
+}
+
+.contact-page .footer-content {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 35px;
+    padding: 55px 20px;
+}
+
+.contact-page .footer-content h3,
+.contact-page .footer-content h4 {
+    color: #10c7ff;
+    margin-bottom: 18px;
+}
+
+.contact-page .footer-content p {
+    color: #aebed0;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+}
+
+.contact-page .footer-content a {
+    display: block;
+    color: #aebed0;
+    text-decoration: none;
+    margin: 12px 0;
+    transition: .3s;
+}
+
+.contact-page .footer-content a:hover {
+    color: #10c7ff;
+}
+
+.contact-page .footer-bottom {
+    padding: 18px;
+    border-top: 1px solid rgba(255,255,255,.08);
+    text-align: center;
+    color: #8fa1b8;
+}
+
+/* FLOATING WHATSAPP */
+
+.contact-page .whatsapp-float {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #25d366;
+    color: #ffffff;
+    font-size: 29px;
+    text-decoration: none;
+    z-index: 9999;
+    box-shadow: 0 5px 25px rgba(37,211,102,.35);
+    transition: .3s;
+}
+
+.contact-page .whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:850px) {
+
+    .contact-page .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-page .footer-content {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+
+}
+
+@media(max-width:550px) {
+
+    .contact-page .contact-section {
+        padding: 50px 15px;
+    }
+
+    .contact-page .contact-info,
+    .contact-page .contact-form-box {
+        padding: 24px 19px;
+    }
+
+    .contact-page .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-page .contact-hero {
+        padding: 65px 15px;
+    }
+
+}
+
+</style>
+</head>
+
+<body class="contact-page">
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+    <div class="top-bar-track">
+        <span>SMART SURVEILLANCE — CONTACT OUR TEAM</span>
+        <span>SMART SURVEILLANCE — CONTACT OUR TEAM</span>
+    </div>
+</div>
+
+<!-- HEADER -->
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">SS</span>
+            <span>SMART <strong>SURVEILLANCE</strong></span>
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <nav class="navigation">
+
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="products.html">Products</a>
+            <a href="brands.html">Brands</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="admin.html">Admin</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="contact-hero">
+
+    <div class="container">
+
+        <span class="section-tag">
+            WE ARE HERE TO HELP
+        </span>
+
+        <h1>
+            Contact <span>Our Team</span>
+        </h1>
+
+        <p>
+            Need a Security or Electronics Solution?
+            Contact Smart Surveillance today.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+
+<section class="contact-section">
+
+    <div class="container contact-grid">
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="contact-info">
+
+            <span class="section-tag">
+                CONTACT INFORMATION
+            </span>
+
+            <h2>
+                Let's <span class="highlight">Connect</span>
+            </h2>
+
+            <div class="info-item">
+
+                <div class="info-icon">☎</div>
+
+                <div>
+                    <h3>Phone / WhatsApp</h3>
+
+                    <p>
+                        <a href="tel:+923477112091">
+                            0347 7112091
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="tel:+923204131881">
+                            0320 4131881
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="info-item">
+
+                <div class="info-icon">✉</div>
+
+                <div>
+                    <h3>Email Address</h3>
+
+                    <p>
+                        <a href="mailto:smartsurviceline01@gmail.com">
+                            smartsurviceline01@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="info-item">
+
+                <div class="info-icon">⌖</div>
+
+                <div>
+                    <h3>Our Location</h3>
+
+                    <p>
+                        60 Feet Road, Near Mian Amiruddin Park,
+                        Lahore, Pakistan.
+                    </p>
+                </div>
+
+            </div>
+
+            <a
+                class="map-button"
+                href="https://www.google.com/maps/search/?api=1&query=60+Feet+Road+Near+Mian+Amiruddin+Park+Lahore+Pakistan"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open Google Maps →
+            </a>
+
+        </div>
+
+        <!-- CONTACT FORM -->
+
+        <div class="contact-form-box">
+
+            <h2>
+                Send an <span class="highlight">Enquiry</span>
+            </h2>
+
+            <p class="form-description">
+                Tell us what you need.
+                Our team will receive your enquiry on WhatsApp.
+            </p>
+
+            <form id="contactForm">
+
+                <label for="name">
+                    Your Name *
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="phone">
+                    Phone Number *
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    autocomplete="tel"
+                    required
+                >
+
+                <label for="service">
+                    Select Service *
+                </label>
+
+                <select
+                    id="service"
+                    name="service"
+                    required
+                >
+
+                    <option value="">
+                        Select a service
+                    </option>
+
+                    <option value="CCTV Installation">
+                        CCTV Installation
+                    </option>
+
+                    <option value="IP Cameras">
+                        IP Cameras
+                    </option>
+
+                    <option value="DVR / NVR">
+                        DVR / NVR
+                    </option>
+
+                    <option value="LED / TV Repairing">
+                        LED / TV Repairing
+                    </option>
+
+                    <option value="Laptop Accessories">
+                        Laptop Accessories
+                    </option>
+
+                    <option value="Computer Accessories">
+                        Computer Accessories
+                    </option>
+
+                    <option value="Electronics Accessories">
+                        Electronics Accessories
+                    </option>
+
+                    <option value="Other Enquiry">
+                        Other Enquiry
+                    </option>
+
+                </select>
+
+                <label for="message">
+                    Your Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your requirements here..."
+                ></textarea>
+
+                <button
+                    type="submit"
+                    class="send-whatsapp"
+                >
+                    ☎ Send Enquiry on WhatsApp →
+                </button>
+
+                <p class="form-note">
+                    Your enquiry will open directly in WhatsApp.
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="contact-cta">
+
+    <div class="container">
+
+        <h2>
+            SMART <span class="highlight">SURVEILLANCE</span>
+        </h2>
+
+        <p>
+            Your Security and Technology Requirements Matter to Us.
+        </p>
+
+        <a
+            href="https://wa.me/923477112091"
+            class="cta-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            ☎ Chat on WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="container footer-content">
+
+        <div>
+
+            <h3>SMART SURVEILLANCE</h3>
+
+            <p>
+                Professional security, electronics
+                and technology solutions in Lahore, Pakistan.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="products.html">Products</a>
+            <a href="brands.html">Brands</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <div>
+
+            <h4>Contact Information</h4>
+
+            <p>0347 7112091</p>
+            <p>0320 4131881</p>
+
+            <p>
+                smartsurviceline01@gmail.com
+            </p>
+
+            <p>Lahore, Pakistan</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © <span id="year"></span>
+            Smart Surveillance. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+    class="whatsapp-float"
+    href="https://wa.me/923477112091"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp"
+>
+    ☎
+</a>
+
+<!-- SCRIPTS -->
+
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="config.js"></script>
+
+<script src="site-content.js"></script>
+
+<script>
+
+// =================================
+// CONTACT FORM WHATSAPP SYSTEM
+// =================================
+
+// Your WhatsApp number
+// Pakistan international format
+// No plus sign, spaces or dashes
+
+const WHATSAPP_NUMBER = "923477112091";
+
+// Footer year
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+// Form submission
+
+document.getElementById("contactForm")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("name")
+        .value.trim();
+
+    const phone = document.getElementById("phone")
+        .value.trim();
+
+    const service = document.getElementById("service")
+        .value;
+
+    const message = document.getElementById("message")
+        .value.trim();
+
+    if (!name || !phone || !service) {
+
+        alert("Please fill in all required fields.");
+
+        return;
+    }
+
+    // Prepare WhatsApp message
+
+    const whatsappMessage =
+
+`*NEW CUSTOMER ENQUIRY*
+*SMART SURVEILLANCE*
+
+----------------------------
+
+*Customer Name:* ${name}
+
+*Phone Number:* ${phone}
+
+*Required Service:* ${service}
+
+*Message:* ${message || "No additional message"}
+
+----------------------------
+
+Sent from Smart Surveillance Website.`;
+
+    // Encode message
+
+    const encodedMessage =
+        encodeURIComponent(whatsappMessage);
+
+    // WhatsApp URL
+
+    const whatsappURL =
+        "https://wa.me/" +
+        WHATSAPP_NUMBER +
+        "?text=" +
+        encodedMessage;
+
+    // Open WhatsApp
+
+    window.open(
+        whatsappURL,
+        "_blank",
+        "noopener,noreferrer"
+    );
+
+});
+
+</script>
+
+</body>
+</html>

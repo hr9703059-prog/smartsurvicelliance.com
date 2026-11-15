@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Surveillance | Admin Panel</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+<body>
+
+<!-- LOGIN SCREEN -->
+
+<section id="loginScreen" class="login-screen">
+
+    <div class="login-card">
+
+        <div class="brand-icon">
+            <i>SS</i>
+        </div>
+
+        <h1>SMART <span>SURVEILLANCE</span></h1>
+
+        <p class="login-subtitle">SECURE ADMIN PORTAL</p>
+
+        <form id="loginForm">
+
+            <label>Admin Email</label>
+
+            <input
+                type="email"
+                id="adminEmail"
+                placeholder="Enter admin email"
+                required
+            >
+
+            <label>Password</label>
+
+            <input
+                type="password"
+                id="adminPassword"
+                placeholder="Enter password"
+                required
+            >
+
+            <button type="submit" id="loginButton">
+                LOGIN TO DASHBOARD
+            </button>
+
+        </form>
+
+        <p id="loginMessage" class="message"></p>
+
+        <a href="index.html" class="back-link">
+            ← Back To Website
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ADMIN DASHBOARD -->
+
+<div id="adminApp" class="admin-app hidden">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <div class="brand-icon small">SS</div>
+
+            <div>
+                <h2>SMART</h2>
+                <span>SURVEILLANCE</span>
+            </div>
+        </div>
+
+        <div class="admin-profile">
+            <div class="profile-icon">A</div>
+
+            <div>
+                <strong>Administrator</strong>
+                <small>Control Center</small>
+            </div>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <p class="menu-heading">MAIN MENU</p>
+
+            <button class="nav-btn active" data-section="dashboardSection">
+                <span>▦</span> Dashboard
+            </button>
+
+            <button class="nav-btn" data-section="contentSection">
+                <span>✎</span> Page Content
+            </button>
+
+            <button class="nav-btn" data-section="imagesSection">
+                <span>▧</span> Media Library
+            </button>
+
+            <button class="nav-btn" data-section="contactSection">
+                <span>☎</span> Contact Settings
+            </button>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="index.html">View Website ↗</a>
+
+            <button id="logoutButton" class="logout-button">
+                ⇥ Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN AREA -->
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h2 id="sectionTitle">Dashboard</h2>
+                <p>Smart Surveillance Management System</p>
+            </div>
+
+            <div class="online-status">
+                <span></span> Admin Online
+            </div>
+
+        </header>
+
+
+        <!-- DASHBOARD -->
+
+        <section id="dashboardSection" class="content-section">
+
+            <div class="welcome-card">
+
+                <div>
+                    <p>WELCOME BACK</p>
+
+                    <h1>Smart Surveillance Admin</h1>
+
+                    <span>
+                        Manage your complete website from one place.
+                    </span>
+                </div>
+
+                <div class="welcome-symbol">SS</div>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <span>WEBSITE PAGES</span>
+                    <h2>07</h2>
+                    <small>Available Pages</small>
+                </div>
+
+                <div class="stat-card">
+                    <span>CONTENT SYSTEM</span>
+                    <h2>CMS</h2>
+                    <small>Supabase Database</small>
+                </div>
+
+                <div class="stat-card">
+                    <span>MEDIA STORAGE</span>
+                    <h2>LIVE</h2>
+                    <small>Supabase Storage</small>
+                </div>
+
+            </div>
+
+
+            <div class="panel-card">
+
+                <h3>Website Pages</h3>
+
+                <div class="page-grid">
+
+                    <button data-page="home" class="page-card">
+                        <span>⌂</span> Home
+                    </button>
+
+                    <button data-page="services" class="page-card">
+                        <span>⚙</span> Services
+                    </button>
+
+                    <button data-page="products" class="page-card">
+                        <span>▣</span> Products
+                    </button>
+
+                    <button data-page="brands" class="page-card">
+                        <span>✦</span> Brands
+                    </button>
+
+                    <button data-page="projects" class="page-card">
+                        <span>▧</span> Projects
+                    </button>
+
+                    <button data-page="about" class="page-card">
+                        <span>ⓘ</span> About
+                    </button>
+
+                    <button data-page="contact" class="page-card">
+                        <span>☎</span> Contact
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTENT EDITOR -->
+
+        <section id="contentSection" class="content-section hidden">
+
+            <div class="panel-card">
+
+                <h3>Website Content Editor</h3>
+
+                <p class="panel-description">
+                    Select a page and edit its content.
+                </p>
+
+                <label>Select Page</label>
+
+                <select id="pageSelect">
+                    <option value="home">Home</option>
+                    <option value="services">Services</option>
+                    <option value="products">Products</option>
+                    <option value="brands">Brands</option>
+                    <option value="projects">Projects</option>
+                    <option value="about">About</option>
+                    <option value="contact">Contact</option>
+                </select>
+
+                <button id="loadContentButton" class="secondary-button">
+                    Load Page Content
+                </button>
+
+                <label>Content JSON</label>
+
+                <textarea
+                    id="contentEditor"
+                    placeholder='{"title":"Smart Surveillance"}'
+                    spellcheck="false"
+                ></textarea>
+
+                <button id="saveContentButton" class="primary-button">
+                    SAVE WEBSITE CONTENT
+                </button>
+
+                <p id="contentMessage" class="message"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- IMAGE MANAGER -->
+
+        <section id="imagesSection" class="content-section hidden">
+
+            <div class="panel-card">
+
+                <h3>Media Library</h3>
+
+                <p class="panel-description">
+                    Upload and manage website images.
+                </p>
+
+                <input
+                    type="file"
+                    id="imageInput"
+                    accept="image/png,image/jpeg,image/webp"
+                >
+
+                <button id="uploadImageButton" class="primary-button">
+                    UPLOAD IMAGE
+                </button>
+
+                <p id="imageMessage" class="message"></p>
+
+                <div class="media-grid" id="mediaGrid"></div>
+
+                <button id="refreshImagesButton" class="secondary-button">
+                    REFRESH IMAGES
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT SETTINGS -->
+
+        <section id="contactSection" class="content-section hidden">
+
+            <div class="panel-card">
+
+                <h3>Contact Information</h3>
+
+                <p class="panel-description">
+                    Manage your website contact information.
+                </p>
+
+                <label>WhatsApp Number</label>
+
+                <input
+                    type="tel"
+                    id="whatsappNumber"
+                    placeholder="923001234567"
+                >
+
+                <label>Business Email</label>
+
+                <input
+                    type="email"
+                    id="businessEmail"
+                    placeholder="your@email.com"
+                >
+
+                <label>Business Address</label>
+
+                <input
+                    type="text"
+                    id="businessAddress"
+                    placeholder="Lahore, Pakistan"
+                >
+
+                <button id="saveContactButton" class="primary-button">
+                    SAVE CONTACT DETAILS
+                </button>
+
+                <p id="contactMessage" class="message"></p>
+
+            </div>
+
+        </section>
+
+
+        <footer class="admin-footer">
+            SMART SURVEILLANCE © 2026 | ADMIN CONTROL PANEL
+        </footer>
+
+    </main>
+
+</div>
+
+
+<script type="module" src="admin.js"></script>
+
+</body>
+</html>
